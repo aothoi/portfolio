@@ -1,0 +1,44 @@
+.navMain{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    padding: 1.5em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'DM Serif Display', serif;
+}
+
+a:hover{
+    background-color: rgba(119, 119, 119, 0.301);
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) and (min-width: 376px){
+    a{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 375px) {
+    a{
+        font-size: 0.7em;
+    }
+}
