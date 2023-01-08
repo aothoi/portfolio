@@ -1,0 +1,145 @@
+.workMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.workCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5em;
+    width: 100%;
+}
+
+.workCard{
+    width: 20%;
+    padding: 2%;
+    margin: 2.5em;
+    background-color: rgba(54, 54, 54, 0.301);
+    border-radius: 1.5em;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.workCard:hover{
+    background-color: rgba(119, 119, 119, 0.301);
+    transition: 300ms all ease;
+}
+
+.projectTitle{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.projectName{
+    font-size: 2em;
+    line-height: 2em;
+    background-color: transparent;
+}
+
+a{
+    background-color: transparent;
+}
+
+.projectIcon{
+    font-size: 2em;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.projectIcon:hover{
+    font-size: 2.1em;
+    transition: 200ms all ease;
+}
+
+.projectDesc{
+    margin-top: 0.5em;
+    line-height: 1.8em;
+    background-color: transparent;
+    color: rgb(155, 155, 155);
+}
+
+.projectTech{
+    margin-top: 1.5em;
+    line-height: 1.8em;
+    background-color: transparent;
+    color: rgb(155, 155, 155);
+}
+
+@media (max-width: 1264px) and (min-width: 376px){
+    .workMain{
+        height: 90vh;
+    }
+
+    .workCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5em;
+        width: 100%;
+    }
+
+    .workCard{
+        width: 70%;
+        padding: 2% 3%;
+        margin: 0.8em;  
+    }
+
+    .projectName{
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    .projectDesc{
+        font-size: 0.9em;
+        line-height: 1.5em;
+    }
+    
+    .projectTech{
+        margin-top: 1em;
+        font-size: 0.9em;
+        line-height: 1.8em;
+    }
+}
+
+@media (max-width: 375px) {
+    .workMain{
+        height: 90vh;
+    }
+
+    .workCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1em;
+        width: 100%;
+    }
+
+    .workCard{
+        width: 60%;
+        padding: 3% 5%;
+        margin: 0.8em;  
+    }
+
+    .projectName{
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .projectDesc{
+        font-size: 0.7em;
+        line-height: 1.5em;
+    }
+    
+    .projectTech{
+        margin-top: 1em;
+        font-size: 0.6em;
+        line-height: 1.8em;
+    }
+}
