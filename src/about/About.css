@@ -1,0 +1,111 @@
+.aboutMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    margin: 5em 0;
+}
+
+.aboutSections{
+    display: flex;
+    align-items: center;
+    margin-top: 2.5em;
+}
+
+.aboutSection{
+    margin: 0em 2.3em;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.jobTitle{
+    font-size: 2em;
+    line-height: 2em;
+    background-color: transparent;
+}
+
+.body{
+    line-height: 1.8em;
+}
+
+.skills{
+    margin-top: 1em;
+}
+
+li{
+    color: rgb(155, 155, 155);
+}
+
+@media (max-width: 1600px) and (min-width: 376px){
+    .aboutMain{
+        height: 100vh;
+    }
+
+    .aboutSections{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.5em;
+    }
+
+    .aboutSection{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 85%;
+        margin: 1em 2em;
+    }
+    
+    .jobTitle{
+        font-size: 1.5em;
+        line-height: 1.5em;
+        background-color: transparent;
+    }
+    
+    .body{
+        font-size: 0.9em;
+        line-height: 1.8em;
+    }
+
+    .skills{
+        font-size: 0.8em;
+    }
+}
+
+
+@media (max-width: 375px) {   
+    .aboutMain{
+        height: 90vh;
+    }
+
+    .aboutSections{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    .aboutSection{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 85%;
+        margin: 1em 2em;
+    }
+    
+    .jobTitle{
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .body{
+        font-size: 0.7em;
+        line-height: 1.8em;
+    }
+
+    .skills{
+        font-size: 0.6em;
+    }
+}
