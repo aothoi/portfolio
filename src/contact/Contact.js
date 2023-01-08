@@ -22,7 +22,7 @@ export const Contact = () => {
         <div className="footer">
             <p>Made With</p>
             <img src={logo} alt="logo"/>
-            <p><a href="https://github.com/suppaGonzal0/portfolio">Source Code</a> By Mehzabin Sadat Aothoi</p>
+            <p><a href="https://github.com/suppaGonzal0/portfolio" target="_blank" rel="noreferrer">Source Code</a> By Mehzabin Sadat Aothoi</p>
         </div>
     </div>
   )
