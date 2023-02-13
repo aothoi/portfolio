@@ -3,8 +3,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    height: 70vh;
+    height: 75vh;
     gap: 3em;
+    margin-top: 4em;
 }
 
 .contactCard{
@@ -14,15 +15,17 @@
     width: 60%;
     margin: 0 0 5em 0;
     padding: 1.5em;
-    background-color: rgba(54, 54, 54, 0.301);
     border-radius: 1.5em;
     font-family: 'Red Hat Display', sans-serif;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
 }
 
-.contactCard:hover{
+/* .contactCard:hover{
     background-color: rgba(119, 119, 119, 0.301);
     transition: 300ms all ease;
-}
+} */
 
 .email{
     display: flex;
@@ -88,6 +91,10 @@ img{
 }
 
 @media (max-width: 375px){
+    .contactMain{
+        margin-top: 5em;
+    }
+
     .contactCard{
         flex-direction: column;
         width: 60%;

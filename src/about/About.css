@@ -3,37 +3,68 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
     margin: 5em 0;
+    height: 100vh;
 }
 
-.aboutSections{
+.aboutSectionCards{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-top: 2.5em;
+    justify-content: center;
+    margin-top: 1.5em;
+    width: 100%;
 }
 
-.aboutSection{
-    margin: 0em 2.3em;
+.aboutSectionCard{
+    width: 65%;
+    padding: 2%;
+    margin: 1em;
+    border-radius: 1.5em;
     font-family: 'Red Hat Display', sans-serif;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    display: flex;
+}
+
+.title{
+    background-color: transparent;
+    width: 55%;
+    padding-left: 1em;
 }
 
 .jobTitle{
-    font-size: 2em;
-    line-height: 2em;
+    font-size: 1.6em;
+    line-height: 1.5em;
+    background-color: transparent;
+}
+
+.company{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    background-color: transparent;
+}
+
+.skills{
+    line-height: 1.5em;
+    font-size: 1em;
     background-color: transparent;
 }
 
 .body{
     line-height: 1.8em;
-}
-
-.skills{
-    margin-top: 1em;
+    background-color: transparent;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 li{
+    font-size: 1.2em;
     color: rgb(155, 155, 155);
+    background-color: transparent;
 }
 
 @media (max-width: 1600px) and (min-width: 376px){
@@ -41,20 +72,25 @@ li{
         height: 100vh;
     }
 
-    .aboutSections{
+    .aboutSectionCards{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 2.5em;
+        width: 100%;
     }
 
-    .aboutSection{
+    .aboutSectionCard{
+        display: flex;
+        width: 70%;
+        margin: 1em 2em;
+    }
+
+    .title{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        width: 85%;
-        margin: 1em 2em;
+        justify-content: center;
     }
     
     .jobTitle{
@@ -64,22 +100,18 @@ li{
     }
     
     .body{
-        font-size: 0.9em;
+        font-size: 0.8em;
         line-height: 1.8em;
     }
 
     .skills{
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 }
 
 
 @media (max-width: 375px) {   
-    .aboutMain{
-        height: 90vh;
-    }
-
-    .aboutSections{
+    .aboutSectionCards{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -87,25 +119,41 @@ li{
         margin-top: 1em;
     }
 
-    .aboutSection{
+    .aboutSectionCard{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        width: 85%;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
         margin: 1em 2em;
+        padding: 0.7em;
+    }
+
+    .title{
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
     }
     
     .jobTitle{
-        font-size: 1em;
+        font-size: 1.2em;
         line-height: 1.5em;
+    }
+
+    .company{
+        font-size: 0.8em;
     }
     
     .body{
-        font-size: 0.7em;
+        width: 90%;
+        font-size: 0.6em;
         line-height: 1.8em;
+        margin-top: 1em;
     }
 
     .skills{
-        font-size: 0.6em;
+        font-size: 0.7em;
+        line-height: 1.2em;
+        margin: 0.6em 0;
     }
 }

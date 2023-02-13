@@ -2,12 +2,13 @@ import "./Contact.css"
 import {HiMail} from "react-icons/hi"
 import {BsLinkedin} from "react-icons/bs"
 import {AiFillGithub} from "react-icons/ai"
+import {FaExternalLinkAlt} from "react-icons/fa"
 import logo from "./logo512.png"
 
 export const Contact = () => {
   return (
     <div id="contact" className="contactMain">
-        <p className="head"><span>04.</span> Let's Get In Touch</p>
+        <p className="head">04. Let's Get In Touch</p>
         <div className="contactCard">
             <div className="email">
                 <HiMail className="emailIcon"/>
@@ -22,7 +23,7 @@ export const Contact = () => {
         <div className="footer">
             <p>Made With</p>
             <img src={logo} alt="logo"/>
-            <p><a href="https://github.com/suppaGonzal0/portfolio" target="_blank" rel="noreferrer">Source Code</a> By Mehzabin Sadat Aothoi</p>
+            <p><FaExternalLinkAlt/> <a href="https://github.com/suppaGonzal0/portfolio" target="_blank" rel="noreferrer">Source Code</a> By Mehzabin Sadat Aothoi</p>
         </div>
     </div>
   )

@@ -1,6 +1,7 @@
 .navMain{
     display: flex;
     justify-content: center;
+    
 }
 
 nav{
@@ -14,6 +15,9 @@ nav{
     position: fixed;
     top: 0;
     z-index: 9999;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(1, 0, 14, 0.719);
 }
 
 a{
@@ -26,8 +30,10 @@ a{
 }
 
 a:hover{
-    background-color: rgba(119, 119, 119, 0.301);
-    border-radius: 1.5em;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 1em;
     cursor: pointer;
 }
 

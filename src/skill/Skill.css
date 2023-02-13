@@ -20,11 +20,13 @@
     width: 5em;
     padding: 1em;
     text-align: center;
-    background-color: rgba(54, 54, 54, 0.301);
-    border-radius: 1.5em;
-    font-size: 1.2em;
+    border-radius: 1em;
+    font-size: 1.3em;
     cursor: default;
     font-family: 'Red Hat Display', sans-serif;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75)
 }
 
 .skillRow p:hover{

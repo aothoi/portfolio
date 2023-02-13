@@ -1,29 +1,36 @@
 *{
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgb(1, 0, 14);
   color: white;
   scroll-behavior: smooth;
+  scroll-padding-top: 3em;
 }
 
 .head{
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 500;
   margin-bottom: 0.2em;
   font-family: 'DM Serif Display', serif;
-}
-
-.head span{
-  color: rgb(155, 155, 155);
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 800px) and (min-width: 376px){
+
   .head{
     font-size: 1.7em;
   }
 }
 
 @media (max-width: 375px){
+
+  *{
+    scroll-padding-top: 4em;
+  }
+
   .head{
     font-size: 1.25em;
   }

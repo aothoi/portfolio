@@ -1,17 +1,15 @@
 import "./Home.css"
+import {MdLocationPin} from "react-icons/md"
 
 export const Home = () => {
   return (
     <div className='homeMain'>
-        <p className="intro1">Hi, I'm Mehzabin</p>
-        <p className="intro2">I build web applications</p>
-        <p className="description">I am a software developer based in Dhaka, Bangladesh.
-            My goal is to always build elegant, scalable, and
-            reliable applications.
-            <br/> I am also enthusiastic 
-            about learning and adapting to the latest 
-            technology stacks and frameworks
+        <p className="intro1">Hey, I'm Mehzabin</p>
+        <p className="intro2">Software Engineer &  Web Developer</p>
+        <p className="description">
+            My goal is to always craft elegant, solid, and reliable applications.
         </p>
+        <div className="location"><MdLocationPin style={{ fill: '#777777' }}/> <p>Dhaka, Bangladesh</p></div>
     </div>
   )
 }
