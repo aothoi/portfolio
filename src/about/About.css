@@ -67,7 +67,7 @@ li{
     background-color: transparent;
 }
 
-@media (max-width: 1600px) and (min-width: 376px){
+@media (max-width: 1600px) and (min-width: 420px){
     .aboutMain{
         height: 100vh;
     }
@@ -110,7 +110,7 @@ li{
 }
 
 
-@media (max-width: 375px) {   
+@media (max-width: 420px) {   
     .aboutSectionCards{
         display: flex;
         flex-direction: column;
