@@ -6,6 +6,19 @@ export const About = () => {
       <p className="head">01. Experiences I Have Gained</p>
       <div className="aboutSectionCards">
 
+      <div className="aboutSectionCard">
+          <div className="title">
+            <p className="jobTitle">Software Engineer Intern</p>
+            <p className="company">Square Health Ltd. | Feb 2023 - May 2023</p>
+            <p className="skills">Typescript · Angular · PrimeNG · Bootstrap · Git · Team work</p>
+          </div>
+          <p className="body">
+            <li>Implemented responsive interfaces using Angular and Bootstrap</li>
+            <li>Ensured secure and optimized frontend performance</li>
+            <li>Designed the database and analyzed requirement specifications</li>
+          </p>
+        </div>
+
         <div className="aboutSectionCard">
           <div className="title">
             <p className="jobTitle">Software Engineer Intern</p>
