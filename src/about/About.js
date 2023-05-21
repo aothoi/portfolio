@@ -13,9 +13,9 @@ export const About = () => {
             <p className="skills">Typescript · Angular · PrimeNG · Bootstrap · Git · Team work</p>
           </div>
           <p className="body">
-            <li>Implemented responsive interfaces using Angular and Bootstrap</li>
+            <li>Implemented responsive interfaces with Angular & Bootstrap</li>
             <li>Ensured secure and optimized frontend performance</li>
-            <li>Designed the database and analyzed requirement specifications</li>
+            <li>Designed database and analyzed requirements specifications</li>
           </p>
         </div>
 
