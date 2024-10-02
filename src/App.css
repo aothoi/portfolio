@@ -1,37 +1,23 @@
 *{
   margin: 0;
   padding: 0;
-  background-color: rgb(1, 0, 14);
-  color: white;
+  color: black;
   scroll-behavior: smooth;
   scroll-padding-top: 3em;
 }
 
-.head{
-  font-size: 2.5em;
-  font-weight: 500;
-  margin-bottom: 0.2em;
-  font-family: 'DM Serif Display', serif;
-  background: linear-gradient(90deg, #efd5ff 0%, #515ada 90%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.navLink {
+  color: black !important;
+  font-size: 1.2em !important;
 }
 
-@media (max-width: 800px) and (min-width: 376px){
-
-  .head{
-    font-size: 1.7em;
-  }
+.navLink:hover,
+.navLink.active {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgb(0, 0, 0);
+  border-radius: 0.6em;
+  color: white !important;
+  padding: 0.5em;
 }
 
-@media (max-width: 375px){
-
-  *{
-    scroll-padding-top: 4em;
-  }
-
-  .head{
-    font-size: 1.25em;
-  }
-}
