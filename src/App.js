@@ -1,9 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Container, Nav, Navbar } from "react-bootstrap";
-import { MdLocationPin } from "react-icons/md";
+import { IoLocationSharp } from "react-icons/io5";
 import { SiGmail } from "react-icons/si";
-import { HiMail } from "react-icons/hi";
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import logo from "./logo512.png"
 import { BsLinkedin } from 'react-icons/bs';
@@ -36,18 +35,18 @@ const About = () => {
     return (
         <div id="about" className='min-vh-100 d-flex flex-column justify-content-center align-items-center text-center'>
             <h1>Hey, I'm Mehzabin</h1>
-            <h2 className="text-muted">Software Engineer @ Therap</h2>
+            <h2 className="text-muted">Software Engineer @ <a href="https://therapbd.com/" target='_blank' rel='noreferrer' className='text-muted'>Therap</a></h2>
             <p className="fs-4">
                 My goal is to always craft secure, robust and reliable applications
             </p>
             <div className="row fs-6">
                 <div className="col d-flex gap-1 align-items-center justify-content-center">
-                    <MdLocationPin style={{ fill: '#000' }} />
+                    <IoLocationSharp />
                     <p className="m-0">Dhaka, Bangladesh</p>
                 </div>
                 <div className="col d-flex gap-1 align-items-center justify-content-center">
-                    <HiMail style={{ fill: '#000' }} />
-                    <p className="m-0">mehzabin.aothoi1@gmail</p>
+                    <SiGmail />
+                    <a href='mailTo:mehzabin.aothoi1@gmail.com' className="m-0 text-black">mehzabin.aothoi1@gmail.com</a>
                 </div>
             </div>
         </div>
@@ -61,15 +60,15 @@ const Industry = () => {
             <Card className="p-4 w-75 m-4 row">
                 <div>
                     <h4>Software Engineer</h4>
-                    <p className="fs-5">Therap (BD) Ltd. | Oct 2023 - Present</p>
-                    <p className="fs-6 text-muted">Spring Boot · JPA · Hibernate · Oracle Database · RabbitMQ · React · Thymeleaf</p>
+                    <p className="fs-5"><a href="https://therapbd.com/" target='_blank' rel='noreferrer' className='text-black'>Therap (BD) Ltd.</a> | Oct 2023 - Present</p>
+                    <p className="fs-6 text-muted">Spring Boot · JPA · Hibernate · Oracle Database · Microservices · RabbitMQ · React · Thymeleaf</p>
                 </div>
             </Card>
 
             <Card className="p-4 w-75 m-4 row">
                 <div>
                     <h4>Software Engineer Intern</h4>
-                    <p className="fs-5">Square Health Ltd. | Feb 2023 - May 2023</p>
+                    <p className="fs-5"><a href="https://squarehealth.com.bd/" target='_blank' rel='noreferrer' className='text-black'>Square Health Ltd.</a> | Feb 2023 - May 2023</p>
                     <p className="fs-6 text-muted">Typescript · Angular · PrimeNG · Bootstrap · Git · Team work</p>
                 </div>
             </Card>
@@ -77,7 +76,7 @@ const Industry = () => {
             <Card className="p-4 w-75 m-4 row">
                 <div>
                     <h4>Software Engineer Intern</h4>
-                    <p className="fs-5">Penguin.com.bd | Mar 2021 - Jun 2021</p>
+                    <p className="fs-5"><a href="https://penguin.com.bd/" target='_blank' rel='noreferrer' className='text-black'>Penguin.com.bd</a> | Mar 2021 - Jun 2021</p>
                     <p className="fs-6 text-muted">React · React Native · SpringBoot · Git · Web Development · Teamwork</p>
                 </div>
             </Card>
@@ -102,14 +101,14 @@ const Academia = () => {
             <Card className="p-4 w-75 m-4 row">
                 <div>
                     <h4>Teaching Assistant</h4>
-                    <p className="fs-5">BRAC University | Feb 2022 - Dec 2022</p>
+                    <p className="fs-5"><a href="https://www.bracu.ac.bd/" target='_blank' rel='noreferrer' className='text-black'>BRAC University</a> | Feb 2022 - Dec 2022</p>
                     <p className="fs-6 text-muted">Mathematics · Python · Teaching · Communication · Management</p>
                 </div>
             </Card>
             <Card className="p-4 w-75 m-4 row">
                 <div>
                     <h4>B.Sc. in Computer Science & Engineering</h4>
-                    <p className="fs-5">BRAC University | Jan 2019 - Jan 2023</p>
+                    <p className="fs-5"><a href="https://www.bracu.ac.bd/" target='_blank' rel='noreferrer' className='text-black'>BRAC University</a> | Jan 2019 - Jan 2023</p>
                     <p className="fs-6 text-muted">Highest Distinction · VC's List · Dean's List · 3.82/4.00</p>
                 </div>
             </Card>
@@ -152,11 +151,11 @@ const Contact = () => {
     return (
         <div class="d-flex flex-column min-vh-100"> <div id="contact" className="flex-grow-1 d-flex flex-column justify-content-center align-items-center text-center">
             <h2>Let's Connect!</h2>
-            <Card className="p-4 w-75 m-4 d-flex justify-content-between">  
+            <Card className="p-4 w-75 m-4 d-flex justify-content-between">
                 <i className='fs-4'>I am open to project collaboration and research opportunities on software engineering</i>
                 <div className="d-flex gap-3 mt-3 align-items-center justify-content-center">
                     <a href="mailTo:mehzabin.aothoi1@gmail.com">
-                        <SiGmail style={{ fontSize: '1.6em' }} />
+                        <SiGmail style={{ fontSize: '1.5em' }} />
                     </a>
                     <a href="https://www.linkedin.com/in/mehzabin/" target="_blank" rel="noreferrer"
                     ><BsLinkedin style={{ fontSize: '1.4em' }} />
@@ -173,8 +172,7 @@ const Contact = () => {
                     <p className="text-muted">Made With</p>
                     <img src={logo} alt="logo" style={{ width: '5em' }} />
                     <p className="text-muted">
-                        <FaExternalLinkAlt style={{ fontSize: '0.8em' }}/>
-                        <a href="https://github.com/aothoi/portfolio" target="_blank" rel="noreferrer">Source Code</a> - Mehzabin Sadat Aothoi
+                        <a href="https://github.com/aothoi/portfolio" target="_blank" rel="noreferrer">Source Code</a> <FaExternalLinkAlt style={{ fontSize: '0.8em' }} /> - Mehzabin Sadat Aothoi
                     </p>
                 </div>
             </footer>
